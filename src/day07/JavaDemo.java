@@ -17,5 +17,9 @@ public class JavaDemo {
         a = "def";
 
         System.out.println(a + "---" + b);
+
+//        new R().printOk();
+
+        R.getR().printOk();
     }
 }
