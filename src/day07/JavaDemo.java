@@ -41,5 +41,14 @@ public class JavaDemo {
         List<String> list2 = list.stream().map(User::getName).collect(Collectors.toList());
         System.out.println(list1);
         System.out.println(list2);
+
+        ArrayList<Integer> list3 = new ArrayList<>();
+        list3.add(1);
+        list3.add(2);
+        list3.add(3);
+        List<Integer> integerList = list3.stream().map(item -> {
+            return 3;
+        }).collect(Collectors.toList());
+        System.out.println(integerList);
     }
 }
